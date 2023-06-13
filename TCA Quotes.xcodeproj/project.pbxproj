@@ -14,6 +14,13 @@
 		0FDC9C212A37382500D87915 /* TCA_QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C202A37382500D87915 /* TCA_QuotesTests.swift */; };
 		0FDC9C2B2A37382500D87915 /* TCA_QuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C2A2A37382500D87915 /* TCA_QuotesUITests.swift */; };
 		0FDC9C2D2A37382500D87915 /* TCA_QuotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C2C2A37382500D87915 /* TCA_QuotesUITestsLaunchTests.swift */; };
+		0FDC9C3B2A37387900D87915 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0FDC9C3A2A37387900D87915 /* ComposableArchitecture */; };
+		0FDC9C402A37392800D87915 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C3F2A37392800D87915 /* QuoteModel.swift */; };
+		0FDC9C422A373B6000D87915 /* AllQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C412A373B6000D87915 /* AllQuotesView.swift */; };
+		0FDC9C442A373B8200D87915 /* ReadQuotesFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C432A373B8200D87915 /* ReadQuotesFeature.swift */; };
+		0FDC9C462A3759A000D87915 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C452A3759A000D87915 /* MainReducer.swift */; };
+		0FDC9C492A375EB000D87915 /* AddQuoteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C482A375EB000D87915 /* AddQuoteFeature.swift */; };
+		0FDC9C4B2A375ED100D87915 /* AddQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC9C4A2A375ED100D87915 /* AddQuoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		0FDC9C262A37382500D87915 /* TCA QuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA QuotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDC9C2A2A37382500D87915 /* TCA_QuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_QuotesUITests.swift; sourceTree = "<group>"; };
 		0FDC9C2C2A37382500D87915 /* TCA_QuotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_QuotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FDC9C3F2A37392800D87915 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		0FDC9C412A373B6000D87915 /* AllQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuotesView.swift; sourceTree = "<group>"; };
+		0FDC9C432A373B8200D87915 /* ReadQuotesFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadQuotesFeature.swift; sourceTree = "<group>"; };
+		0FDC9C452A3759A000D87915 /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		0FDC9C482A375EB000D87915 /* AddQuoteFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteFeature.swift; sourceTree = "<group>"; };
+		0FDC9C4A2A375ED100D87915 /* AddQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDC9C3B2A37387900D87915 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,9 @@
 		0FDC9C0E2A37382400D87915 /* TCA Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				0FDC9C452A3759A000D87915 /* MainReducer.swift */,
+				0FDC9C472A375E8D00D87915 /* AddQuotes */,
+				0FDC9C3C2A3738A100D87915 /* ReadQuotes */,
 				0FDC9C0F2A37382400D87915 /* TCA_QuotesApp.swift */,
 				0FDC9C112A37382400D87915 /* ContentView.swift */,
 				0FDC9C132A37382500D87915 /* Assets.xcassets */,
@@ -127,6 +144,25 @@
 			path = "TCA QuotesUITests";
 			sourceTree = "<group>";
 		};
+		0FDC9C3C2A3738A100D87915 /* ReadQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				0FDC9C3F2A37392800D87915 /* QuoteModel.swift */,
+				0FDC9C412A373B6000D87915 /* AllQuotesView.swift */,
+				0FDC9C432A373B8200D87915 /* ReadQuotesFeature.swift */,
+			);
+			path = ReadQuotes;
+			sourceTree = "<group>";
+		};
+		0FDC9C472A375E8D00D87915 /* AddQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				0FDC9C482A375EB000D87915 /* AddQuoteFeature.swift */,
+				0FDC9C4A2A375ED100D87915 /* AddQuoteView.swift */,
+			);
+			path = AddQuotes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +179,9 @@
 			dependencies = (
 			);
 			name = "TCA Quotes";
+			packageProductDependencies = (
+				0FDC9C3A2A37387900D87915 /* ComposableArchitecture */,
+			);
 			productName = "TCA Quotes";
 			productReference = 0FDC9C0C2A37382400D87915 /* TCA Quotes.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 0FDC9C032A37382300D87915;
+			packageReferences = (
+				0FDC9C392A37387900D87915 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 0FDC9C0D2A37382400D87915 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDC9C402A37392800D87915 /* QuoteModel.swift in Sources */,
+				0FDC9C462A3759A000D87915 /* MainReducer.swift in Sources */,
 				0FDC9C122A37382400D87915 /* ContentView.swift in Sources */,
 				0FDC9C102A37382400D87915 /* TCA_QuotesApp.swift in Sources */,
+				0FDC9C492A375EB000D87915 /* AddQuoteFeature.swift in Sources */,
+				0FDC9C422A373B6000D87915 /* AllQuotesView.swift in Sources */,
+				0FDC9C442A373B8200D87915 /* ReadQuotesFeature.swift in Sources */,
+				0FDC9C4B2A375ED100D87915 /* AddQuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FDC9C392A37387900D87915 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FDC9C3A2A37387900D87915 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FDC9C392A37387900D87915 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FDC9C042A37382300D87915 /* Project object */;
 }
